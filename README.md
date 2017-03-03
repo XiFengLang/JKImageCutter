@@ -3,7 +3,7 @@
 
 ## Example ##
 
-![](https://github.com/XiFengLang/JKImageCutter/JKImageCutter01.png) ![](https://github.com/XiFengLang/JKImageCutter/JKImageCutter02.png)
+![](https://github.com/XiFengLang/JKImageCutter/blob/master/JKImageCutter01.png) ![](https://github.com/XiFengLang/JKImageCutter/blob/master/JKImageCutter02.png)
 
 
 
