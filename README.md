@@ -3,9 +3,10 @@
 
 ## Example ##
 
-![](https://github.com/XiFengLang/JKImageCutter/blob/master/JKImageCutter01.png) ![](https://github.com/XiFengLang/JKImageCutter/blob/master/JKImageCutter02.png)
-
-
+<img src="https://github.com/XiFengLang/JKImageCutter/blob/master/JKImageCutter01.png"
+ width="320" height="588">
+<img src="https://github.com/XiFengLang/JKImageCutter/blob/master/JKImageCutter02.png"
+ width="320" height="588">
 
 ## Usage ##
 
