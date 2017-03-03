@@ -11,7 +11,6 @@
 		9F3D7A541E67BBFE00271BA1 /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F3D7A531E67BBFE00271BA1 /* img4.jpg */; };
 		9F6080EF1E65229E005C3E15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6080EE1E65229E005C3E15 /* main.m */; };
 		9F6080F21E65229E005C3E15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6080F11E65229E005C3E15 /* AppDelegate.m */; };
-		9F6080F51E65229E005C3E15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6080F41E65229E005C3E15 /* ViewController.m */; };
 		9F6080F81E65229E005C3E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6080F61E65229E005C3E15 /* Main.storyboard */; };
 		9F6080FA1E65229E005C3E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6080F91E65229E005C3E15 /* Assets.xcassets */; };
 		9F6080FD1E65229E005C3E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6080FB1E65229E005C3E15 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		9F60810B1E6523B7005C3E15 /* JKImageCutter_Selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6081091E6523B7005C3E15 /* JKImageCutter_Selected.png */; };
 		9F60810E1E6551CC005C3E15 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F60810C1E6551CC005C3E15 /* img1.jpg */; };
 		9F6081111E6551E5005C3E15 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6081101E6551E5005C3E15 /* img3.png */; };
+		9FC2E4A71E69153400EAC55C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2E4A61E69153400EAC55C /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,6 @@
 		9F6080F01E65229E005C3E15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9F6080F11E65229E005C3E15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9F6080F31E65229E005C3E15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F6080F41E65229E005C3E15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9F6080F71E65229E005C3E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F6080F91E65229E005C3E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6080FC1E65229E005C3E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		9F6081091E6523B7005C3E15 /* JKImageCutter_Selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JKImageCutter_Selected.png; sourceTree = "<group>"; };
 		9F60810C1E6551CC005C3E15 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		9F6081101E6551E5005C3E15 /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
+		9FC2E4A61E69153400EAC55C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				9F6080F01E65229E005C3E15 /* AppDelegate.h */,
 				9F6080F11E65229E005C3E15 /* AppDelegate.m */,
 				9F6080F31E65229E005C3E15 /* ViewController.h */,
-				9F6080F41E65229E005C3E15 /* ViewController.m */,
+				9FC2E4A61E69153400EAC55C /* ViewController.m */,
 				9F60810C1E6551CC005C3E15 /* img1.jpg */,
 				9F3D7A4B1E66AE8400271BA1 /* img2.png */,
 				9F6081101E6551E5005C3E15 /* img3.png */,
@@ -189,8 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6081071E6522EB005C3E15 /* JKImageCutViewController.m in Sources */,
-				9F6080F51E65229E005C3E15 /* ViewController.m in Sources */,
 				9F6080F21E65229E005C3E15 /* AppDelegate.m in Sources */,
+				9FC2E4A71E69153400EAC55C /* ViewController.m in Sources */,
 				9F6080EF1E65229E005C3E15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +314,7 @@
 				DEVELOPMENT_TEAM = 5C5VZ6884A;
 				INFOPLIST_FILE = JKImageCutter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.fitcome.JKImageCutter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xifenglang.JKImageCutter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -326,7 +326,7 @@
 				DEVELOPMENT_TEAM = 5C5VZ6884A;
 				INFOPLIST_FILE = JKImageCutter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.fitcome.JKImageCutter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xifenglang.JKImageCutter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -21,9 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationItem.title = @"JKImageCutter";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(pushToImageCutVC)];
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(pushToImageCutImageVC)];
     
     self.imageView = [[UIImageView alloc] init];
     self.imageView.backgroundColor = [UIColor redColor];
@@ -39,6 +39,14 @@
     self.imageView.frame = CGRectMake((size.width - imageWidth) / 2.0, (size.height - imageWidth) / 2.0, imageWidth, imageWidth);
 }
 
+- (void)pushToImageCutImageVC {
+    JKImageCutViewController * cutVC = [[JKImageCutViewController alloc] init];
+    cutVC.type = JKImageCutterTypeRounded;
+    [cutVC cutImage:[UIImage imageNamed:@"img1.jpg"] completionHandler:^(UIImage *image) {
+        self.imageView.image = image;
+    }];
+    [self.navigationController pushViewController:cutVC animated:YES];
+}
 
 - (void)pushToImageCutVC {
     JKImageCutViewController * cutVC = [[JKImageCutViewController alloc] init];

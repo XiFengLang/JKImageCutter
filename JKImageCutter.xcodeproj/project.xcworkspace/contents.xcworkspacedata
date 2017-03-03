@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JKImageCutter.xcodeproj">
+      location = "self:/Users/jiangpeng/Desktop/MyGithub/JKImageCutter/JKImageCutter.xcodeproj">
    </FileRef>
 </Workspace>
