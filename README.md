@@ -2,11 +2,7 @@
 通用型的图片裁剪器，支持圆形和方形裁剪，对长图、小图都有做兼容优化。
 
 ## Example ##
-
-<img src="https://github.com/XiFengLang/JKImageCutter/blob/master/JKImageCutter01.png"
- width="320" height="588">
-<img src="https://github.com/XiFengLang/JKImageCutter/blob/master/JKImageCutter02.png"
- width="320" height="588">
+<img src="http://wx1.sinaimg.cn/mw690/c56eaed1gy1fetak02dwfj208w0gcn4j.jpg" width="230" height="400"><img src="http://wx3.sinaimg.cn/mw690/c56eaed1gy1fetajze9zoj208w0gc422.jpg" width="230" height="400">
 
 ## Usage ##
 
