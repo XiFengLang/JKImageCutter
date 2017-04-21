@@ -29,5 +29,5 @@
 	if (self.completionHandler) {
         self.completionHandler(image);
         self.completionHandler = nil;
-    }
+   }
 ```
