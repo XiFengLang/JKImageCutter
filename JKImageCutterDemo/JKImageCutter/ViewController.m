@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "JKImageCutViewController.h"
+#import <JKImageCutter/JKImageCutViewController.h>
 
 @interface ViewController ()
 
