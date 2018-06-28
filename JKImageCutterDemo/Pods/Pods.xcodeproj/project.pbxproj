@@ -10,10 +10,10 @@
 		2C3A7C3E8D582A4E24457DFDF5A5FDBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		506312E5BB7218CBEAC50DCF2A373958 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		64285B201E0921E8E1AD9B70C6D87809 /* JKImageCutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D28FEFE9C2C77DF4FCBB5CCFEBB6CEB5 /* JKImageCutViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		883670C51CD4FC3DE0AA53E9CF243A79 /* JKImageCutter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A98B24024773B7A6A9ED1444242C98 /* JKImageCutter-dummy.m */; };
 		9B86B87E27462E97F2C2CC1DBE924CE4 /* Pods-JKImageCutter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A871B47923C7EC2A55639BEE1CC67E /* Pods-JKImageCutter-dummy.m */; };
 		BB5495E674CDBCEABA5AC96E21EDAC28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		FB3009BE77D95FAB0201F2F7B2FAF075 /* JKImageCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23818BB826BBFC4D46EFBEAC80F0A29E /* JKImageCutViewController.m */; };
+		D4C83A8660A7CEA1BF2244D7C16E4C9F /* JKImageCutter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A98B24024773B7A6A9ED1444242C98 /* JKImageCutter-dummy.m */; };
+		ECC713D4B161C4F84D374111A704383C /* JKImageCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23818BB826BBFC4D46EFBEAC80F0A29E /* JKImageCutViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,7 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C116817AD6FCE79C9B31B2DEE5A348A /* Build configuration list for PBXNativeTarget "JKImageCutter" */;
 			buildPhases = (
-				04C71101A7FA2EA443D84ECE5EB89BEA /* Sources */,
+				95B13E111445E6E46F56FDC464AFC622 /* Sources */,
 				7E08E95FF8C6C1A13687366C1537C070 /* Frameworks */,
 				A803B73E47913EA7C26D99CB94F02337 /* Headers */,
 			);
@@ -245,20 +245,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04C71101A7FA2EA443D84ECE5EB89BEA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				883670C51CD4FC3DE0AA53E9CF243A79 /* JKImageCutter-dummy.m in Sources */,
-				FB3009BE77D95FAB0201F2F7B2FAF075 /* JKImageCutViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7509805869CC60F14FA461F627731AF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9B86B87E27462E97F2C2CC1DBE924CE4 /* Pods-JKImageCutter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95B13E111445E6E46F56FDC464AFC622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C83A8660A7CEA1BF2244D7C16E4C9F /* JKImageCutter-dummy.m in Sources */,
+				ECC713D4B161C4F84D374111A704383C /* JKImageCutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
