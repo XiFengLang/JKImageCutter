@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F3D7A4C1E66AE8400271BA1 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F3D7A4B1E66AE8400271BA1 /* img2.png */; };
-		9F3D7A541E67BBFE00271BA1 /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F3D7A531E67BBFE00271BA1 /* img4.jpg */; };
 		9F6080EF1E65229E005C3E15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6080EE1E65229E005C3E15 /* main.m */; };
 		9F6080F21E65229E005C3E15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6080F11E65229E005C3E15 /* AppDelegate.m */; };
 		9F6080F81E65229E005C3E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6080F61E65229E005C3E15 /* Main.storyboard */; };
 		9F6080FA1E65229E005C3E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6080F91E65229E005C3E15 /* Assets.xcassets */; };
 		9F6080FD1E65229E005C3E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6080FB1E65229E005C3E15 /* LaunchScreen.storyboard */; };
-		9F60810E1E6551CC005C3E15 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F60810C1E6551CC005C3E15 /* img1.jpg */; };
-		9F6081111E6551E5005C3E15 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6081101E6551E5005C3E15 /* img3.png */; };
 		9FC2E4A71E69153400EAC55C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2E4A61E69153400EAC55C /* ViewController.m */; };
 		C4F2E77E4BAF73BA41B1F61F /* libPods-JKImageCutter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D31567E385108AC8F15CA2C1 /* libPods-JKImageCutter.a */; };
+		ED9211AF20E4E1C1008D882B /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED9211AB20E4E1C1008D882B /* img4.jpg */; };
+		ED9211B020E4E1C1008D882B /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9211AC20E4E1C1008D882B /* img2.png */; };
+		ED9211B120E4E1C1008D882B /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9211AD20E4E1C1008D882B /* img3.png */; };
+		ED9211B220E4E1C1008D882B /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED9211AE20E4E1C1008D882B /* img1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54D11E5FAF1387CDF12F8E8A /* Pods-JKImageCutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKImageCutter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKImageCutter/Pods-JKImageCutter.debug.xcconfig"; sourceTree = "<group>"; };
-		9F3D7A4B1E66AE8400271BA1 /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
-		9F3D7A531E67BBFE00271BA1 /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
 		9F6080EA1E65229E005C3E15 /* JKImageCutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKImageCutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6080EE1E65229E005C3E15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F6080F01E65229E005C3E15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,11 +31,13 @@
 		9F6080F91E65229E005C3E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6080FC1E65229E005C3E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6080FE1E65229E005C3E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F60810C1E6551CC005C3E15 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
-		9F6081101E6551E5005C3E15 /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
 		9FC2E4A61E69153400EAC55C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D31567E385108AC8F15CA2C1 /* libPods-JKImageCutter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKImageCutter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E400FE8ED2E32183D6491A24 /* Pods-JKImageCutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKImageCutter.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKImageCutter/Pods-JKImageCutter.release.xcconfig"; sourceTree = "<group>"; };
+		ED9211AB20E4E1C1008D882B /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
+		ED9211AC20E4E1C1008D882B /* img2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
+		ED9211AD20E4E1C1008D882B /* img3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
+		ED9211AE20E4E1C1008D882B /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,14 +94,14 @@
 				9F6080F11E65229E005C3E15 /* AppDelegate.m */,
 				9F6080F31E65229E005C3E15 /* ViewController.h */,
 				9FC2E4A61E69153400EAC55C /* ViewController.m */,
-				9F60810C1E6551CC005C3E15 /* img1.jpg */,
-				9F3D7A4B1E66AE8400271BA1 /* img2.png */,
-				9F6081101E6551E5005C3E15 /* img3.png */,
-				9F3D7A531E67BBFE00271BA1 /* img4.jpg */,
 				9F6080F61E65229E005C3E15 /* Main.storyboard */,
 				9F6080F91E65229E005C3E15 /* Assets.xcassets */,
 				9F6080FB1E65229E005C3E15 /* LaunchScreen.storyboard */,
 				9F6080FE1E65229E005C3E15 /* Info.plist */,
+				ED9211AE20E4E1C1008D882B /* img1.jpg */,
+				ED9211AC20E4E1C1008D882B /* img2.png */,
+				ED9211AD20E4E1C1008D882B /* img3.png */,
+				ED9211AB20E4E1C1008D882B /* img4.jpg */,
 				9F6080ED1E65229E005C3E15 /* Supporting Files */,
 			);
 			path = JKImageCutter;
@@ -176,13 +176,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9211AF20E4E1C1008D882B /* img4.jpg in Resources */,
+				ED9211B020E4E1C1008D882B /* img2.png in Resources */,
+				ED9211B220E4E1C1008D882B /* img1.jpg in Resources */,
 				9F6080FD1E65229E005C3E15 /* LaunchScreen.storyboard in Resources */,
-				9F60810E1E6551CC005C3E15 /* img1.jpg in Resources */,
 				9F6080FA1E65229E005C3E15 /* Assets.xcassets in Resources */,
-				9F6081111E6551E5005C3E15 /* img3.png in Resources */,
 				9F6080F81E65229E005C3E15 /* Main.storyboard in Resources */,
-				9F3D7A541E67BBFE00271BA1 /* img4.jpg in Resources */,
-				9F3D7A4C1E66AE8400271BA1 /* img2.png in Resources */,
+				ED9211B120E4E1C1008D882B /* img3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,11 +214,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JKImageCutter/Pods-JKImageCutter-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter_Cancel.png",
 				"${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter_Selected.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JKImageCutter_Cancel.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JKImageCutter_Selected.png",
 			);

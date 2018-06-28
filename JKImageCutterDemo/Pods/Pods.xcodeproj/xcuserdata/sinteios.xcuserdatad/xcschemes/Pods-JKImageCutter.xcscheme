@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7BE0D9E50F765911228F921EE985BD06"
+               BlueprintIdentifier = "3970CD0C909B51CFE22F53688D4501F8"
                BlueprintName = "Pods-JKImageCutter"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-JKImageCutter.a">

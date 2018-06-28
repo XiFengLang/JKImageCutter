@@ -92,10 +92,12 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter_Cancel.png"
   install_resource "${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter_Selected.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle"
   install_resource "${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter_Cancel.png"
   install_resource "${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter_Selected.png"
 fi

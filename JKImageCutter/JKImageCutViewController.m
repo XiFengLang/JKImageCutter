@@ -176,11 +176,14 @@ static inline CGSize JKMainScreenSize() {
     CGFloat buttonWidth = 50;
     CGFloat margin = 50;
     
-    UIImage * cancelImage = [self redrawButtonBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"JKImageCutter_Cancel.png" ofType:nil]]];
+    NSBundle *mainBundle = [NSBundle bundleForClass:NSClassFromString(@"JKImageCutter")];
+    NSBundle *sourceBundle = [NSBundle bundleWithPath:[mainBundle pathForResource:@"JKImageCutter" ofType:@"bundle"]];
+    
+    UIImage * cancelImage = [self redrawButtonBackgroundImage:[UIImage imageWithContentsOfFile:[sourceBundle pathForResource:@"JKImageCutter_Cancel.png" ofType:nil]]];
     UIButton * cancelButton = [self buttonWithImage:cancelImage frame:CGRectMake(margin, JKMainScreenSize().height - 20 - buttonWidth, buttonWidth, buttonWidth) target:self action:@selector(cancelOrDropOut)];
     [self.view addSubview:cancelButton];
     
-    UIImage * selectedImage = [self redrawButtonBackgroundImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"JKImageCutter_Selected.png" ofType:nil]]];
+    UIImage * selectedImage = [self redrawButtonBackgroundImage:[UIImage imageWithContentsOfFile:[sourceBundle pathForResource:@"JKImageCutter_Selected.png" ofType:nil]]];
     UIButton * doneButton = [self buttonWithImage:selectedImage frame:CGRectMake(JKMainScreenSize().width - margin - buttonWidth, cancelButton.frame.origin.y, buttonWidth, buttonWidth) target:self action:@selector(clipImage)];
     [self.view addSubview:doneButton];
 }
