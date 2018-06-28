@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JKImageCutter"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "通用型的图片裁剪器，支持圆形和方形裁剪，对长图、小图都有做兼容优化。"
   s.homepage     = "https://github.com/XiFengLang/JKImageCutter"
   
