@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/XiFengLang/JKImageCutter.git", :tag => "#{s.version}" }
 
   s.source_files  = "JKImageCutter/*.{h,m}"
-  s.resources = "JKImageCutter.bundle"
+  s.resources = "JKImageCutter/JKImageCutter.bundle"
 
   s.platform     = :ios,"8.0"
   s.framework  = "UIKit"
