@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "JKImageCutter"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "通用型的图片裁剪器，支持圆形和方形裁剪，对长图、小图都有做兼容优化。"
   s.homepage     = "https://github.com/XiFengLang/JKImageCutter"
   
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/XiFengLang/JKImageCutter.git", :tag => "#{s.version}" }
 
   s.source_files  = "JKImageCutter/*.{h,m}"
-  s.resources = "JKImageCutter/*.png"
+  s.resources = "JKImageCutter.bundle"
 
   s.platform     = :ios,"8.0"
   s.framework  = "UIKit"

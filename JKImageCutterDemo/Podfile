@@ -13,7 +13,7 @@ target 'JKImageCutter' do
   # use_frameworks!
 
   # Pods for JKImageCutter
-  pod 'JKImageCutter','~> 1.0.1'
+  pod 'JKImageCutter','~> 1.0.2'
   pod 'IQKeyboardManager','~> 6.0.4'
 
 end
