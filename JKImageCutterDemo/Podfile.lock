@@ -1,16 +1,16 @@
 PODS:
-  - JKImageCutter (1.0.0)
+  - JKImageCutter (1.0.1)
 
 DEPENDENCIES:
-  - JKImageCutter (~> 1.0.0)
+  - JKImageCutter (~> 1.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - JKImageCutter
 
 SPEC CHECKSUMS:
-  JKImageCutter: 29541d0942fe93d0887f280527231a7410a9ad92
+  JKImageCutter: de76438825f7359d462a10b2fcfd30bfcc492f3e
 
-PODFILE CHECKSUM: 0ccf0b62c18b5ef9893cf561724f3e4ea111e22b
+PODFILE CHECKSUM: e3ee5ebc6ce9bc13219d9960eea05b91184e0ecc
 
 COCOAPODS: 1.5.3

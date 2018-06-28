@@ -4,12 +4,15 @@
 ## Example ##
 <img src="http://wx1.sinaimg.cn/mw690/c56eaed1gy1fetak02dwfj208w0gcn4j.jpg" width="230" height="400"><img src="http://wx3.sinaimg.cn/mw690/c56eaed1gy1fetajze9zoj208w0gc422.jpg" width="230" height="400">
 
+
+## CocoaPods
+
+```
+pod 'JKImageCutter','~> 1.0.1'
+```
+
 ## Usage ##
 
-
-```Object-C
-#import "JKImageCutViewController.h"
-```
 
 ```Object-C
     JKImageCutViewController * cutVC = [[JKImageCutViewController alloc] init];
