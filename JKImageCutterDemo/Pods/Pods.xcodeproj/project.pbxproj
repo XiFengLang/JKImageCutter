@@ -21,7 +21,7 @@
 		51548348F7A35EBC8E62C47E914D0B7D /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A6D3E29A49BC1C67BE554FB5A3ED67 /* IQTitleBarButtonItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5ECB3B4EE63B35693244DC8E476272AF /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A5EB6A663BEE3F4BD6D34632955202 /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		63391430C243A5D8449DFC2F945455A3 /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F7A450CA95FA96E54790EDFE6B2B5C /* IQToolbar.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		64285B201E0921E8E1AD9B70C6D87809 /* JKImageCutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1B119EB28CE73B43ED438E33C005D7 /* JKImageCutViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		64285B201E0921E8E1AD9B70C6D87809 /* JKImageCutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 16ED19FE9CA2C6DB6A1E38F401A6BD1A /* JKImageCutViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		665492C80104FF405E81263D0BA99AF6 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B76D993CB74640B2C40F5F941284A62 /* IQUIView+IQKeyboardToolbar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		66E3164519B5436903757501E2982E3E /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F8B1F37330245CD77341D4E0F0AC36 /* IQTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6E34338C3209AA2A1847ECDDFAD64E87 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DF76F85685B91230AA7CC3B609B5CB /* IQKeyboardManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -40,13 +40,13 @@
 		C4720488CC6D5D454BE0C1AEF554B337 /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD7707420F501AFE39942D54D6C7E2B /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D2651FCF0E229BABB5E962B21E76A0F9 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 211E4BC9DFA3D4F263BB202E2ADFF19F /* IQNSArray+Sort.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D49FF46F3D5BA6EFE0E4A12AF1B8E9A9 /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1624EF21E209319FA35BA1245AF8BB9C /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D4C83A8660A7CEA1BF2244D7C16E4C9F /* JKImageCutter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2B068B13430A6CE92BA50B2F09C49 /* JKImageCutter-dummy.m */; };
+		D4C83A8660A7CEA1BF2244D7C16E4C9F /* JKImageCutter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D280E7DE0CE69DB236A4039E57B9F0 /* JKImageCutter-dummy.m */; };
 		D71110AF9D0AC6B07D73483DD1B77491 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1684D4A94AC532813AA7C743D177BB /* IQKeyboardReturnKeyHandler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D8188D3ADB1BB024A8798BBED5593B5E /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F8F07E02CA188BFA5F18F367CB9DFC /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D865F1299909BDA5029ACA535789B510 /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5981C62678E37078F20E1140AB76EFCC /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E195239C4111641A837F8A6C86529052 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */; };
 		E32307F2F563511737FCD523E9C4D391 /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 969F0FF7E70CCF705CD237CB1DD7F230 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ECC713D4B161C4F84D374111A704383C /* JKImageCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B60C3F5B95DC7DF1CDF3B98BE72389 /* JKImageCutViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		ECC713D4B161C4F84D374111A704383C /* JKImageCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 755B7620229FD83B591755640974ECCD /* JKImageCutViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,17 +70,17 @@
 		027AACCBCD372B3A4EE18123E98CD4E7 /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
 		05A6D3E29A49BC1C67BE554FB5A3ED67 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
 		06D497739185D32B86F1D32CD5B071C3 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		0AFD6E22C380BF04A6B4AF0A9E16152B /* JKImageCutter.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = JKImageCutter.bundle; path = JKImageCutter/JKImageCutter.bundle; sourceTree = "<group>"; };
 		1578160847DA288F3323E9230BFA91E6 /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
 		1624EF21E209319FA35BA1245AF8BB9C /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
-		18C1CC4915D3D07D97E1EBFB7FED9D75 /* JKImageCutter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKImageCutter.xcconfig; sourceTree = "<group>"; };
+		16ED19FE9CA2C6DB6A1E38F401A6BD1A /* JKImageCutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JKImageCutViewController.h; path = JKImageCutter/JKImageCutViewController.h; sourceTree = "<group>"; };
 		211E4BC9DFA3D4F263BB202E2ADFF19F /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		2134E908D38EBCCE29C23C9D471DEB65 /* JKImageCutter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKImageCutter.xcconfig; sourceTree = "<group>"; };
 		21FFCF9FC44C22C00E67AB6C0113B4DF /* libJKImageCutter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJKImageCutter.a; path = libJKImageCutter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3292CC8DBF6352C2BF2B949CB548248F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		34ECFEBF47676EE5A42630B03357932B /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
-		3FAA7AF6D1B4313CF96906EB64B48C96 /* JKImageCutter_Selected.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = JKImageCutter_Selected.png; path = JKImageCutter/JKImageCutter_Selected.png; sourceTree = "<group>"; };
 		4B76D993CB74640B2C40F5F941284A62 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		555771F9C66A7989D4D0913DD26C166B /* Pods-JKImageCutter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKImageCutter-acknowledgements.markdown"; sourceTree = "<group>"; };
-		55E93493E861287880B7F88D94D4BAC9 /* JKImageCutter_Cancel.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = JKImageCutter_Cancel.png; path = JKImageCutter/JKImageCutter_Cancel.png; sourceTree = "<group>"; };
 		5981C62678E37078F20E1140AB76EFCC /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
 		5F82328663F00B543CB6837A69127F7B /* libPods-JKImageCutter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JKImageCutter.a"; path = "libPods-JKImageCutter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61DF76F85685B91230AA7CC3B609B5CB /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
@@ -88,11 +88,11 @@
 		66F8B1F37330245CD77341D4E0F0AC36 /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
 		67F8F07E02CA188BFA5F18F367CB9DFC /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
 		6A7694632BBC84F5C4D40B05C5DAD1DB /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
-		6FD2B068B13430A6CE92BA50B2F09C49 /* JKImageCutter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKImageCutter-dummy.m"; sourceTree = "<group>"; };
 		71427D600AD895D109E790EE5E79CABC /* Pods-JKImageCutter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKImageCutter-acknowledgements.plist"; sourceTree = "<group>"; };
-		77B60C3F5B95DC7DF1CDF3B98BE72389 /* JKImageCutViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JKImageCutViewController.m; path = JKImageCutter/JKImageCutViewController.m; sourceTree = "<group>"; };
+		755B7620229FD83B591755640974ECCD /* JKImageCutViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JKImageCutViewController.m; path = JKImageCutter/JKImageCutViewController.m; sourceTree = "<group>"; };
 		7AAA21C617809ED89721967D0CF77BA7 /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
 		7ABE8E4C8FBC6E56FF53AD1705DC21F1 /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
+		82D280E7DE0CE69DB236A4039E57B9F0 /* JKImageCutter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKImageCutter-dummy.m"; sourceTree = "<group>"; };
 		8689D3E09A5FC211A47D40FB99D547E9 /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
 		89A5EB6A663BEE3F4BD6D34632955202 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
 		90D85EA16E6EB0338EBA5D46FEF04262 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
@@ -111,13 +111,12 @@
 		CC78664E5455830F966A65BFFE78B57B /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
 		CCACE21D8C800A384CCDABC160333B35 /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
 		CFFACDC0574E8AA911EF977FC69E4BD0 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManager/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
-		D0BE085962ED608A0900298BDEF2269E /* JKImageCutter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKImageCutter-prefix.pch"; sourceTree = "<group>"; };
 		D6F7A450CA95FA96E54790EDFE6B2B5C /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
 		DC1684D4A94AC532813AA7C743D177BB /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
 		DCD39EBE9EF2E5EB3BA4511D4DB372A4 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
 		DE1E6BA1BFBAF9E013FA0BACE859EC79 /* Pods-JKImageCutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKImageCutter.release.xcconfig"; sourceTree = "<group>"; };
-		DF1B119EB28CE73B43ED438E33C005D7 /* JKImageCutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JKImageCutViewController.h; path = JKImageCutter/JKImageCutViewController.h; sourceTree = "<group>"; };
 		DF779920636198CB5256B70A18763726 /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libIQKeyboardManager.a; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E314C4F6C33DD332A9F34532599DD47E /* JKImageCutter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKImageCutter-prefix.pch"; sourceTree = "<group>"; };
 		E5F748DA8F98E61F788C3488D6BA25DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		ECB56A22A987E846FF65248DA108CAD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FDBA94A94B982885ECCA1662BE8CD7CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -155,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E88FA2E97DFD0BDADCFE34E5E5252F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD6E22C380BF04A6B4AF0A9E16152B /* JKImageCutter.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		0FC86ED03A1362466A239BF5DD973999 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,17 +179,6 @@
 				8F8FEF3140598EAB2B3D56BB84B5389A /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		27A0560BE1B50F05272D3023AC1C29D8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				18C1CC4915D3D07D97E1EBFB7FED9D75 /* JKImageCutter.xcconfig */,
-				6FD2B068B13430A6CE92BA50B2F09C49 /* JKImageCutter-dummy.m */,
-				D0BE085962ED608A0900298BDEF2269E /* JKImageCutter-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JKImageCutter";
 			sourceTree = "<group>";
 		};
 		5DE2498B5EEB34AA6EC800A25D1C080B /* Products */ = {
@@ -267,7 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				860F79101865F17B47A11F7CFD84FD04 /* IQKeyboardManager */,
-				AD394B19B7ED04921A2DD97439E8FC98 /* JKImageCutter */,
+				E404F33FE78BC9F57D49A7045C3A512C /* JKImageCutter */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -278,18 +274,6 @@
 				B82D75B5D0600036B092830867B6AB6E /* Pods-JKImageCutter */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		AD394B19B7ED04921A2DD97439E8FC98 /* JKImageCutter */ = {
-			isa = PBXGroup;
-			children = (
-				DF1B119EB28CE73B43ED438E33C005D7 /* JKImageCutViewController.h */,
-				77B60C3F5B95DC7DF1CDF3B98BE72389 /* JKImageCutViewController.m */,
-				F3381F66959FD18C9BE7BFE11A2AB300 /* Resources */,
-				27A0560BE1B50F05272D3023AC1C29D8 /* Support Files */,
-			);
-			name = JKImageCutter;
-			path = JKImageCutter;
 			sourceTree = "<group>";
 		};
 		B82D75B5D0600036B092830867B6AB6E /* Pods-JKImageCutter */ = {
@@ -307,13 +291,27 @@
 			path = "Target Support Files/Pods-JKImageCutter";
 			sourceTree = "<group>";
 		};
-		F3381F66959FD18C9BE7BFE11A2AB300 /* Resources */ = {
+		BF208CE9754C0D8C7CD6A609C17CDF59 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				55E93493E861287880B7F88D94D4BAC9 /* JKImageCutter_Cancel.png */,
-				3FAA7AF6D1B4313CF96906EB64B48C96 /* JKImageCutter_Selected.png */,
+				2134E908D38EBCCE29C23C9D471DEB65 /* JKImageCutter.xcconfig */,
+				82D280E7DE0CE69DB236A4039E57B9F0 /* JKImageCutter-dummy.m */,
+				E314C4F6C33DD332A9F34532599DD47E /* JKImageCutter-prefix.pch */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/JKImageCutter";
+			sourceTree = "<group>";
+		};
+		E404F33FE78BC9F57D49A7045C3A512C /* JKImageCutter */ = {
+			isa = PBXGroup;
+			children = (
+				16ED19FE9CA2C6DB6A1E38F401A6BD1A /* JKImageCutViewController.h */,
+				755B7620229FD83B591755640974ECCD /* JKImageCutViewController.m */,
+				0E88FA2E97DFD0BDADCFE34E5E5252F8 /* Resources */,
+				BF208CE9754C0D8C7CD6A609C17CDF59 /* Support Files */,
+			);
+			name = JKImageCutter;
+			path = JKImageCutter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,7 +642,7 @@
 		};
 		5FB641D309B9A636E24B0BB2385E2FD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C1CC4915D3D07D97E1EBFB7FED9D75 /* JKImageCutter.xcconfig */;
+			baseConfigurationReference = 2134E908D38EBCCE29C23C9D471DEB65 /* JKImageCutter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -667,7 +665,7 @@
 		};
 		9826EB363E6FC2C2BF2F87CDC5BBEC43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C1CC4915D3D07D97E1EBFB7FED9D75 /* JKImageCutter.xcconfig */;
+			baseConfigurationReference = 2134E908D38EBCCE29C23C9D471DEB65 /* JKImageCutter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

@@ -215,14 +215,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JKImageCutter/Pods-JKImageCutter-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter_Cancel.png",
-				"${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter_Selected.png",
+				"${PODS_ROOT}/JKImageCutter/JKImageCutter/JKImageCutter.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JKImageCutter_Cancel.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JKImageCutter_Selected.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JKImageCutter.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

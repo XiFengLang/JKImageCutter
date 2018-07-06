@@ -15,5 +15,4 @@ target 'JKImageCutter' do
   # Pods for JKImageCutter
   pod 'JKImageCutter','~> 1.0.2'
   pod 'IQKeyboardManager','~> 6.0.4'
-
 end

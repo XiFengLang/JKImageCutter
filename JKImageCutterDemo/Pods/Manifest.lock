@@ -1,10 +1,10 @@
 PODS:
   - IQKeyboardManager (6.0.4)
-  - JKImageCutter (1.0.1)
+  - JKImageCutter (1.0.2)
 
 DEPENDENCIES:
   - IQKeyboardManager (~> 6.0.4)
-  - JKImageCutter (~> 1.0.1)
+  - JKImageCutter (~> 1.0.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -13,8 +13,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
-  JKImageCutter: de76438825f7359d462a10b2fcfd30bfcc492f3e
+  JKImageCutter: 0b95f2d1c7480a935545221792e7784c2365df5c
 
-PODFILE CHECKSUM: bd68e452fd9c93332f9a424a31725e9406015874
+PODFILE CHECKSUM: ee14309d44753cfe5450f95c6431c3399e50bad3
 
 COCOAPODS: 1.5.3
