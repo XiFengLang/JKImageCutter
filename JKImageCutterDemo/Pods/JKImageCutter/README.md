@@ -8,7 +8,7 @@
 ## CocoaPods
 
 ```
-pod 'JKImageCutter','~> 1.0.1'
+pod 'JKImageCutter','~> 1.0.3'
 ```
 
 ## Usage ##

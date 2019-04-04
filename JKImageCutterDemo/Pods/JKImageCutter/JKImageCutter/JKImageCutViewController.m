@@ -40,13 +40,13 @@
 
 @implementation JKImageCutViewController
 
-static inline CGSize JKMainScreenSize() {
+CGSize JKImageCutterScreenSize() {
     return [UIScreen mainScreen].bounds.size;
 }
 
 
 - (CGFloat)scrollViewWH {
-    return MIN(JKMainScreenSize().width, JKMainScreenSize().height);
+    return MIN(JKImageCutterScreenSize().width, JKImageCutterScreenSize().height);
 }
 
 
@@ -57,7 +57,6 @@ static inline CGSize JKMainScreenSize() {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor blackColor];
     
     if (self.imageSource == nil) {
@@ -77,6 +76,11 @@ static inline CGSize JKMainScreenSize() {
     scrollView.minimumZoomScale = 1.0;
     self.scrollView = scrollView;
     
+    if (@available(iOS 11.0, *)) {
+        self.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = false;
+    }
     
     
     UIImageView * imageView = [[UIImageView alloc] init];
@@ -99,7 +103,9 @@ static inline CGSize JKMainScreenSize() {
     self.imageSize = CGSizeMake(imageWidth, imageHeight);
     
     
-    scrollView.frame = CGRectMake((JKMainScreenSize().width - self.scrollViewWH) / 2.0, (JKMainScreenSize().height - self.scrollViewWH) / 2.0, self.scrollViewWH, self.scrollViewWH);
+    scrollView.frame = CGRectMake((JKImageCutterScreenSize().width - self.scrollViewWH) / 2.0,
+                                  (JKImageCutterScreenSize().height - self.scrollViewWH) / 2.0,
+                                  self.scrollViewWH, self.scrollViewWH);
     imageView.frame = CGRectMake(0, 0, self.imageSize.width, self.imageSize.height);
     scrollView.contentSize = CGSizeMake(self.imageSize.width + 0.25, self.imageSize.height + 0.25);
     scrollView.contentOffset = CGPointMake(0.5 * (self.imageSize.width - self.scrollViewWH), 0.5 * (self.imageSize.height - self.scrollViewWH));
@@ -143,8 +149,8 @@ static inline CGSize JKMainScreenSize() {
 
     
     CGFloat lineWidth = 2.0f;
-    CGFloat ovalFrameY = JKMainScreenSize().width > JKMainScreenSize().height ? lineWidth : (JKMainScreenSize().height - JKMainScreenSize().width) / 2.0 + lineWidth;
-    CGRect ovalFrame = CGRectMake((JKMainScreenSize().width - self.scrollViewWH) / 2.0 + lineWidth, ovalFrameY, self.scrollViewWH - lineWidth * 2, self.scrollViewWH - lineWidth * 2);
+    CGFloat ovalFrameY = JKImageCutterScreenSize().width > JKImageCutterScreenSize().height ? lineWidth : (JKImageCutterScreenSize().height - JKImageCutterScreenSize().width) / 2.0 + lineWidth;
+    CGRect ovalFrame = CGRectMake((JKImageCutterScreenSize().width - self.scrollViewWH) / 2.0 + lineWidth, ovalFrameY, self.scrollViewWH - lineWidth * 2, self.scrollViewWH - lineWidth * 2);
     
     UIBezierPath * subPath = nil;
     if (self.type == JKImageCutterTypeRounded) {
@@ -174,17 +180,17 @@ static inline CGSize JKMainScreenSize() {
 
 - (void)addBottomButtons {
     CGFloat buttonWidth = 50;
-    CGFloat margin = 50;
+    CGFloat margin = 55;
     
     NSBundle *mainBundle = [NSBundle bundleForClass:NSClassFromString(@"JKImageCutter")];
     NSBundle *sourceBundle = [NSBundle bundleWithPath:[mainBundle pathForResource:@"JKImageCutter" ofType:@"bundle"]];
     
     UIImage * cancelImage = [self redrawButtonBackgroundImage:[UIImage imageWithContentsOfFile:[sourceBundle pathForResource:@"JKImageCutter_Cancel.png" ofType:nil]]];
-    UIButton * cancelButton = [self buttonWithImage:cancelImage frame:CGRectMake(margin, JKMainScreenSize().height - 20 - buttonWidth, buttonWidth, buttonWidth) target:self action:@selector(cancelOrDropOut)];
+    UIButton * cancelButton = [self buttonWithImage:cancelImage frame:CGRectMake(margin, JKImageCutterScreenSize().height - 30 - buttonWidth, buttonWidth, buttonWidth) target:self action:@selector(cancelOrDropOut)];
     [self.view addSubview:cancelButton];
     
     UIImage * selectedImage = [self redrawButtonBackgroundImage:[UIImage imageWithContentsOfFile:[sourceBundle pathForResource:@"JKImageCutter_Selected.png" ofType:nil]]];
-    UIButton * doneButton = [self buttonWithImage:selectedImage frame:CGRectMake(JKMainScreenSize().width - margin - buttonWidth, cancelButton.frame.origin.y, buttonWidth, buttonWidth) target:self action:@selector(clipImage)];
+    UIButton * doneButton = [self buttonWithImage:selectedImage frame:CGRectMake(JKImageCutterScreenSize().width - margin - buttonWidth, cancelButton.frame.origin.y, buttonWidth, buttonWidth) target:self action:@selector(clipImage)];
     [self.view addSubview:doneButton];
 }
 
@@ -218,7 +224,7 @@ static inline CGSize JKMainScreenSize() {
 
 
 - (UIImage *)resizeImageAppropriately {
-    UIGraphicsBeginImageContextWithOptions(self.imageSize, NO, [UIScreen mainScreen].scale * 2);
+    UIGraphicsBeginImageContextWithOptions(self.imageSize, NO, UIScreen.mainScreen.scale);
     [self.imageSource drawInRect:CGRectMake(0, 0, self.imageSize.width, self.imageSize.height)];
     UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -306,13 +312,16 @@ static inline CGSize JKMainScreenSize() {
  */
 - (void)cancelOrDropOut {
     if (self.navigationController) {
-        if (self.navigationController.viewControllers.count > 1) {
-            [self.navigationController popViewControllerAnimated:YES];
+        if (self.navigationController.presentingViewController) {
+            [self.navigationController dismissViewControllerAnimated:true completion:nil];
         } else {
-            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+            [self.navigationController popViewControllerAnimated:true];
         }
+    } else if (self.presentationController) {
+        [self dismissViewControllerAnimated:true completion:nil];
     } else {
-        [self dismissViewControllerAnimated:YES completion:nil];
+        [self.view removeFromSuperview];
+        [self removeFromParentViewController];
     }
 }
 
@@ -334,8 +343,15 @@ static inline CGSize JKMainScreenSize() {
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait;
+    return UIInterfaceOrientationMaskAllButUpsideDown;
 }
+
+
+/**    隐藏iPhoneX底部的Home条    */
+- (BOOL)prefersHomeIndicatorAutoHidden {
+    return true;
+}
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -64,8 +64,8 @@
 		0283001CE460D762576C84D69CF65662 /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
 		04DC5C26E251AA2F1EB2CAC294CB4C08 /* Pods-JKImageCutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKImageCutter.debug.xcconfig"; sourceTree = "<group>"; };
 		05B6F2C5E5A202746FA7123B003FC401 /* Pods-JKImageCutter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKImageCutter-acknowledgements.plist"; sourceTree = "<group>"; };
-		12768F1B5134D49652320CE83171D472 /* libPods-JKImageCutter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JKImageCutter.a"; path = "libPods-JKImageCutter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		16D2D162CA0FFE7FCAA68DC612C065AB /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libIQKeyboardManager.a; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		12768F1B5134D49652320CE83171D472 /* libPods-JKImageCutter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKImageCutter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		16D2D162CA0FFE7FCAA68DC612C065AB /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6181E4233C85AFC137263BFAE3DAD6 /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
 		213D08A2C7A4BC8E40DA09FB53BD91B1 /* JKImageCutter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKImageCutter-prefix.pch"; sourceTree = "<group>"; };
 		26EE1643DAF8EC5C2EE4EA74B9FCF878 /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		86E4769F6366D91869CDFBE9CDF002C3 /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
 		8B01BF2DCEC80016AAE3388D105EF151 /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
 		9637035749B5237494BBE70966398F58 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A476AE6932DD5220FC79AD5FA2010A60 /* JKImageCutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JKImageCutViewController.h; path = JKImageCutter/JKImageCutViewController.h; sourceTree = "<group>"; };
 		A489271805B64C24D6BDE3C4DA4C9E77 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
 		A8DF03677F6DC90087F346D54BC594DC /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		DF680CC78ABF38DC795AF1DA9C65772B /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
 		E2EBCF67B6E34CBD36B2BB39589AE8DC /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
 		E97EB24EC347A6CD15DA1BEFA1C6AE4E /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
-		EB5ACAECBFDFF0DCD23385F7C5C92587 /* libJKImageCutter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJKImageCutter.a; path = libJKImageCutter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5ACAECBFDFF0DCD23385F7C5C92587 /* libJKImageCutter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJKImageCutter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D5686802B5A56CDEA684EF50265E05 /* JKImageCutViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JKImageCutViewController.m; path = JKImageCutter/JKImageCutViewController.m; sourceTree = "<group>"; };
 		F77AAFC0EE69D92266641951BBBE559B /* JKImageCutter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKImageCutter-dummy.m"; sourceTree = "<group>"; };
 		F9A1CC62DCEF4CC501F58E7F90AAEAC3 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
@@ -177,7 +177,6 @@
 				1C240989977B744913BE8AEE8A09CB2C /* Resources */,
 				4E3D60286E726274774105A877F035CF /* Support Files */,
 			);
-			name = IQKeyboardManager;
 			path = IQKeyboardManager;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				5A1B03C76417CCA90AF83B0E171661FA /* Resources */,
 				D63CAD6459BA300A07D1E8A1F684BC41 /* Support Files */,
 			);
-			name = JKImageCutter;
 			path = JKImageCutter;
 			sourceTree = "<group>";
 		};
@@ -385,14 +383,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = ED9CAC6A18971CBD7CFD45BA87A14388 /* Products */;
@@ -467,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -516,8 +516,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -572,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
