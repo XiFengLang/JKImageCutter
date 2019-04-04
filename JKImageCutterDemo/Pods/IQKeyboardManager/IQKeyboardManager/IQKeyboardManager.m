@@ -79,6 +79,10 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 /** To save rootViewController */
 @property(nonatomic, weak) UIViewController *rootViewController;
 
+/** To overcome with popGestureRecognizer issue Bug ID: #1361 */
+@property(nonatomic, weak) UIViewController *rootViewControllerWhilePopGestureRecognizerActive;
+@property(nonatomic, assign) CGPoint    topViewBeginOriginWhilePopGestureRecognizerActive;
+
 /** To know if we have any pending request to adjust view position. */
 @property(nonatomic, assign) BOOL   hasPendingAdjustRequest;
 
@@ -211,6 +215,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
             [strongSelf.resignFirstResponderGesture setDelegate:self];
             strongSelf.resignFirstResponderGesture.enabled = strongSelf.shouldResignOnTouchOutside;
             strongSelf.topViewBeginOrigin = kIQCGPointInvalid;
+            strongSelf.topViewBeginOriginWhilePopGestureRecognizerActive = kIQCGPointInvalid;
             
             //Setting it's initial values
             strongSelf.animationDuration = 0.25;
@@ -634,13 +639,12 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     kbSize.height += keyboardDistanceFromTextField;
     
     CGFloat topLayoutGuide = rootController.view.layoutMargins.top+5;
+    CGFloat bottomLayoutGuide = rootController.view.layoutMargins.bottom;
 
-    CGFloat move = 0;
     //  +Move positive = textField is hidden.
     //  -Move negative = textField is showing.
-	
     //  Calculating move position. Common for both normal and special cases.
-    move = MIN(CGRectGetMinY(textFieldViewRectInRootSuperview)-topLayoutGuide, CGRectGetMaxY(textFieldViewRectInWindow)-(CGRectGetHeight(keyWindow.frame)-kbSize.height));
+    CGFloat move = MIN(CGRectGetMinY(textFieldViewRectInRootSuperview)-topLayoutGuide, CGRectGetMaxY(textFieldViewRectInWindow)-(CGRectGetHeight(keyWindow.frame)-kbSize.height)+bottomLayoutGuide);
 
     [self showLog:[NSString stringWithFormat:@"Need to move: %.2f",move]];
 
@@ -972,7 +976,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     }
     
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 -(void)restorePosition
@@ -999,6 +1003,11 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
                 strongRootController.view.frame = rect;
 
                 strongSelf.movedDistance = 0;
+                
+                if (strongRootController.navigationController.interactivePopGestureRecognizer.state == UIGestureRecognizerStateBegan) {
+                    strongSelf.rootViewControllerWhilePopGestureRecognizerActive = strongRootController;
+                    strongSelf.topViewBeginOriginWhilePopGestureRecognizerActive = strongSelf.topViewBeginOrigin;
+                }
                 
                 //Animating content if needed (Bug ID: #204)
                 if (strongSelf.layoutIfNeededOnUpdate)
@@ -1083,8 +1092,19 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
         //  keyboard is not showing(At the beginning only). We should save rootViewRect.
         UIViewController *rootController = [textFieldView parentContainerViewController];
         _rootViewController = rootController;
-        _topViewBeginOrigin = rootController.view.frame.origin;
-
+        
+        if (_rootViewControllerWhilePopGestureRecognizerActive == _rootViewController)
+        {
+            _topViewBeginOrigin = _topViewBeginOriginWhilePopGestureRecognizerActive;
+        }
+        else
+        {
+            _topViewBeginOrigin = rootController.view.frame.origin;
+        }
+        
+        _rootViewControllerWhilePopGestureRecognizerActive = nil;
+        _topViewBeginOriginWhilePopGestureRecognizerActive = kIQCGPointInvalid;
+        
         [self showLog:[NSString stringWithFormat:@"Saving %@ beginning origin: %@",[rootController _IQDescription] ,NSStringFromCGPoint(_topViewBeginOrigin)]];
     }
 
@@ -1102,7 +1122,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     }
 
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 /*  UIKeyboardDidShowNotification. */
@@ -1128,7 +1148,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     }
     
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 /*  UIKeyboardWillHideNotification. So setting rootViewController to it's default frame. */
@@ -1206,7 +1226,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     _startingContentOffset = CGPointZero;
 
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 /*  UIKeyboardDidHideNotification. So topViewBeginRect can be set to CGRectZero. */
@@ -1220,7 +1240,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     _kbSize = CGSizeZero;
 
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 #pragma mark - UITextFieldView Delegate methods
@@ -1292,7 +1312,18 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
             //  keyboard is not showing(At the beginning only).
             UIViewController *rootController = [textFieldView parentContainerViewController];
             _rootViewController = rootController;
-            _topViewBeginOrigin = rootController.view.frame.origin;
+            
+            if (_rootViewControllerWhilePopGestureRecognizerActive == _rootViewController)
+            {
+                _topViewBeginOrigin = _topViewBeginOriginWhilePopGestureRecognizerActive;
+            }
+            else
+            {
+                _topViewBeginOrigin = rootController.view.frame.origin;
+            }
+            
+            _rootViewControllerWhilePopGestureRecognizerActive = nil;
+            _topViewBeginOriginWhilePopGestureRecognizerActive = kIQCGPointInvalid;
             
             [self showLog:[NSString stringWithFormat:@"Saving %@ beginning origin: %@",[rootController _IQDescription], NSStringFromCGPoint(_topViewBeginOrigin)]];
         }
@@ -1314,7 +1345,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 //    }
 
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 /**  UITextFieldTextDidEndEditingNotification, UITextViewTextDidEndEditingNotification. Removing fetched object. */
@@ -1360,7 +1391,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     _textFieldView = nil;
 
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 //-(void)editingDidEndOnExit:(UITextField*)textField
@@ -1401,7 +1432,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     [self restorePosition];
 
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 #pragma mark AutoResign methods
@@ -1804,7 +1835,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     }
 
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 /** Remove any toolbar if it is IQToolbar. */
@@ -1833,7 +1864,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     }
 
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******",NSStringFromSelector(_cmd),elapsedTime]];
+    [self showLog:[NSString stringWithFormat:@"****** %@ ended: %g seconds ******\n",NSStringFromSelector(_cmd),elapsedTime]];
 }
 
 /**    reloadInputViews to reload toolbar buttons enable/disable state on the fly Enhancement ID #434. */

@@ -1,5 +1,5 @@
 PODS:
-  - IQKeyboardManager (6.0.4)
+  - IQKeyboardManager (6.0.6)
   - JKImageCutter (1.0.2)
 
 DEPENDENCIES:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - JKImageCutter
 
 SPEC CHECKSUMS:
-  IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
+  IQKeyboardManager: 6b4ecd3e59cf55a26133d802d4678721d7f88499
   JKImageCutter: 0b95f2d1c7480a935545221792e7784c2365df5c
 
 PODFILE CHECKSUM: ee14309d44753cfe5450f95c6431c3399e50bad3
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.0.beta.2
